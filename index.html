@@ -40,21 +40,27 @@
             background-color: #fff;
         }
 
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
         /* Navbar */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 10%;
+            padding: 5px 10%;
             background-color: #fff;
             position: sticky;
             top: 0;
             z-index: 9999;
             /* background-color: rgba(255, 255, 255, 0.95); */
             backdrop-filter: blur(6px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
-        header img{
+
+        header img {
             cursor: pointer;
         }
 
@@ -112,7 +118,7 @@
             font-weight: 800;
             cursor: pointer;
             transition: .6s ease;
-            text-decoration:none ;
+            text-decoration: none;
         }
 
         .hero-text .btn:hover {
@@ -332,12 +338,15 @@
             gap: 20px;
             direction: ltr;
         }
+
         .icons a {
-            color: #d96c6c;;
+            color: #d96c6c;
+            ;
             margin: 0 10px;
             font-size: 1.5rem;
-            transition:  0.3s ease;
+            transition: 0.3s ease;
         }
+
         .icons a:hover {
             color: #b34757;
             scale: 1.2;
@@ -350,9 +359,11 @@
                 flex-direction: column;
                 text-align: center;
             }
-            .hero-text{
+
+            .hero-text {
                 padding: 0;
             }
+
             .hero-image img {
                 margin: 40px 0 0 0;
                 width: 120px;
@@ -371,13 +382,14 @@
             nav ul li a {
                 font-size: 0.9rem;
             }
+
         }
     </style>
 </head>
 
 <body>
     <header>
-       <a href="#home" ><img src="./assets/images/logo.png" alt=" Logo" width="95px"></a>
+        <a href="#home"><img src="./assets/images/logo.png" alt=" Logo" width="95px"></a>
         <nav>
             <ul>
                 <li><a href="#home">الرئسية</a></li>
@@ -405,7 +417,7 @@
                 كل مشط في براندنا يمثل عناية حقيقية بالشعر، نحرص على إنه يحافظ على الشعر وعملي، أنيق، ومناسب لكل نوع
                 شعر.
             </p>
-           <a href="https://www.msht1.com" target="_blank" rel="noopener noreferrer" class="btn">زوري موقعنا</a>
+            <a href="https://www.msht1.com" target="_blank" rel="noopener noreferrer" class="btn">زوري موقعنا</a>
         </div>
     </section>
 
@@ -484,10 +496,13 @@
         </div>
     </section>
 
-    <footer><p>© All Rights Reserved</p>
+    <footer>
+        <p>© All Rights Reserved</p>
         <div class="icons">
-        <a href="https://instagram.com/msht1.stor" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://tiktok.com/msht1stor" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a> 
+            <a href="https://instagram.com/msht1.stor" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com/msht1stor" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-tiktok"></i></a>
         </div>
     </footer>
 
