@@ -39,6 +39,7 @@
             color: #333;
             background-color: #fff;
         }
+        
 
         html,
         body {
@@ -136,6 +137,17 @@
             width: 180px;
             filter: drop-shadow(0 0 20px #F4B0BF) brightness(1.1) saturate(1.3);
             cursor: pointer;
+            animation: shad 8s ease-in-out infinite;
+        }
+        @keyframes shad{
+            0%, 100% {
+    filter: drop-shadow(0 0 20px #d796a4) brightness(1.1) saturate(1.3);            }
+            50% {
+                 filter: drop-shadow(0 0 20px #ad7581) brightness(1.1) saturate(1.3);
+            }
+            75% {
+                 filter: drop-shadow(0 0 20px #aa737f) brightness(1.1) saturate(1.3);
+            }
         }
 
         .hero-image img:hover {
@@ -359,6 +371,9 @@
                 flex-direction: column;
                 text-align: center;
             }
+            .about {
+                padding: 40px 5%;
+            }
 
             .hero-text {
                 padding: 0;
@@ -366,7 +381,7 @@
 
             .hero-image img {
                 margin: 40px 0 0 0;
-                width: 120px;
+                width: 90px;
             }
 
             .about-image img {
@@ -388,6 +403,7 @@
 </head>
 
 <body>
+    <div class="sparkle-background"></div>
     <header>
         <a href="#home"><img src="./assets/images/logo.png" alt=" Logo" width="95px"></a>
         <nav>
@@ -402,11 +418,11 @@
 
     <section class="hero" id="home">
         <div class="hero-image" data-aos="fade-left" data-aos-duration="1500">
-            <img src="./assets/images/hero (1).png" alt="صورة المشط">
-            <img src="./assets/images/hero (2).png" alt="صورة المشط">
+          <a href="#hero-text"><img src="./assets/images/hero (1).png" alt="صورة المشط"></a>  
+          <a href="#hero-text"><img src="./assets/images/hero (2).png" alt="صورة المشط"></a>  
 
         </div>
-        <div class="hero-text" data-aos="fade-right" data-aos-duration="1500">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1500" id="hero-text">
             <h1>مشط</h1>
             <p>بدأت فكرة مشط من ملاحظة بسيطة: إن كثير يعانون من تساقط الشعر أو تلفه بسبب الامشاط القاسية أو الرديئة، ومن
                 هنا بدانا — نصنع مشط يكون مختلف، لطيف على الشعر، ويحافظ على جماله بدل ما يضرّه.
